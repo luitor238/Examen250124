@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
 
         val mochila = Mochila(this)
 
-        val selector = findViewById<EditText>(R.id.selector).text.toString().toInt()
+        val selector = findViewById<EditText>(R.id.selector)
 
         val nombre = findViewById<TextView>(R.id.nombre)
         val tipoArticulo = findViewById<TextView>(R.id.tipoArticulo)
@@ -46,15 +46,15 @@ class MainActivity : AppCompatActivity() {
         btnVer.setOnClickListener {
             val contenido = mochila.getContenido()
 
-            nombre.text = contenido[selector].getNombre().toString()
-            tipoArticulo.text = contenido[selector].getTipoArticulo().toString()
-            peso.text = contenido[selector].getPeso().toString()
-            precio.text = contenido[selector].getPrecio().toString()
+            nombre.text = contenido[selector.text.toString().toInt()].getNombre().toString()
+            tipoArticulo.text = contenido[selector.text.toString().toInt()].getTipoArticulo().toString()
+            peso.text = contenido[selector.text.toString().toInt()].getPeso().toString()
+            precio.text = contenido[selector.text.toString().toInt()].getPrecio().toString()
 
         }
 
         btnBuscar.setOnClickListener {
-            var encontrad = ""
+            var encontrad: String
             if(mochila.findObjeto(nombreBuscar)){
                 encontrad = "Encontrado"}
             else{

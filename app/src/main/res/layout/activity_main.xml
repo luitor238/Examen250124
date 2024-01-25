@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/selector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:text=""
+        android:hint="Selector de articulo (numero posicion)"/>
+
+
+    <TextView
+        android:id="@+id/nombre1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NOMBRE:" />
+    <TextView
+        android:id="@+id/nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="" />
+
+
+    <TextView
+        android:id="@+id/nombre2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TIPO ARTICULO:" />
+    <TextView
+        android:id="@+id/tipoArticulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="" />
+
+
+    <TextView
+        android:id="@+id/nombre3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PESO:" />
+    <TextView
+        android:id="@+id/peso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/nombre4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PRECIO:" />
+    <TextView
+        android:id="@+id/precio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="" />
+
+    <Button
+        android:id="@+id/btnAnadir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/a_adir" />
+
+    <Button
+        android:id="@+id/btnVer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ver" />
+
+    <EditText
+        android:id="@+id/nombreBuscar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Nombre articulo a buscar"
+        android:inputType="text"
+        android:text=""
+        tools:ignore="TouchTargetSizeCheck"
+        android:autofillHints=""/>
+
+    <Button
+        android:id="@+id/btnBuscar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/buscar" />
+
+    <TextView
+        android:id="@+id/encontrado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/nombre6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PESO MOCHILA:" />
+    <TextView
+        android:id="@+id/pesoMochila"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0" />
+
+
+
+</LinearLayout>
